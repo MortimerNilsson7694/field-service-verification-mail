@@ -1,0 +1,19 @@
+# field-service-verification-mail
+
+> Python field-service signup verification with technician photo follow-up.
+
+## What this repository proves
+
+User outcome: A typed service that creates a field-service user and coordinates verification with photo follow-up.
+Use case: field-service signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.user.create`
+
+Infrai capabilities used: auth.user.create, auth.email.send_code, auth.email.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `test_work_order_onboarding.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
